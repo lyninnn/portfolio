@@ -215,6 +215,11 @@ img{
     
 }
 @media(max-width:650px) {
+    .logo1{
+        min-width: 40rem;
+        min-height: 20rem;
+        background-position: center;
+    }
     .contenido2{
         grid-template-columns:repeat(2,1fr);
     }
@@ -228,6 +233,9 @@ img{
     }
     .frase2 img{
         width: 100%;
+    }
+    .contenido .frase2{
+        margin: 1rem;
     }
 }
 .enlace:hover{
