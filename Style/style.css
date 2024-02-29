@@ -144,6 +144,9 @@ img{
 }
 
 @media(min-width:768px) {
+    .logo1{
+        min-width: 50rem;
+    }
     .contenido{
         flex-direction: row;
     }
@@ -222,6 +225,9 @@ img{
     .grid .buton1{
         position: relative;
         top: -2px;
+    }
+    .frase2 img{
+        width: 100%;
     }
 }
 .enlace:hover{
