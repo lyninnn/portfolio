@@ -1,0 +1,318 @@
+:root{
+    --primario:#9c2780;
+    --primarioOscuro:#89119d;
+    --segundario:#ffce00;
+    --segundarioOscuro:rgb(233,187,2);
+    --blanco:#fff;
+    --negro:#000;
+    --fuentePrincipal:'Staatliches', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+body{
+    background-color: antiquewhite;
+}
+header{
+    font-family: var(--fuentePrincipal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+header nav{
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    
+}
+.logo1{
+    background-image: url("../img/logo.png");
+    min-width: 50rem;
+    min-height: 20rem;
+    background-position: center;
+}
+header nav{
+    margin: 0;
+}
+nav a{
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    
+}
+.enlace :hover{
+    color:rgb(196, 43, 43);
+
+}
+
+.enlaces{
+    background-color:rgb(248, 184, 95);
+    padding: 1rem;
+    cursor: pointer;
+}
+.enlaces:hover{
+    width: 100%;
+    background-color: rgb(198, 255, 190);
+    transition: 0.3s;
+
+}
+.contenido{
+    margin: 2rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+}
+img{
+    border-radius: 50%;
+    width: 15rem;
+    height: 10rem;    
+    background-size: cover;  
+}
+.frase{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border: solid black;
+    align-items: center;
+    border-radius: 20px;
+}
+.eleccion{
+    width: 90%;
+}
+.enlace2{
+    display: flex;
+    border: solid black;
+    font-size: 2rem;
+    justify-content: space-around;
+    background-color: #5bd44b;
+}
+.enlace2 a:hover{
+    color:white
+}
+
+@media(min-width:768px) {
+    .contenido{
+        flex-direction: row;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .eleccion{width: 100%;}
+    .enlace2{
+        display: flex;
+        border: none;
+        border: solid black;
+        font-size: 1.4rem;
+    }
+    
+    .enlace{
+        flex-direction: row;
+    }
+    .frase{
+        padding: 1.5rem;
+        
+    }
+    .frase2{
+        margin: 2rem;
+    }
+    .boton {
+        position: relative;
+        bottom: 50px;
+    }
+}
+@media(min-width:1350px){
+    .grid{
+        line-height: 6rem;
+    }
+    .formulario .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid{
+        line-height: 3rem;
+    }
+
+}
+.formulario .grid {
+    display: flex;
+    flex-direction: column;
+}
+.contenido2{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    
+}
+.contenido3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.enlaces2{
+    background-color:rgb(248, 184, 95) ;
+}
+.enlace{
+    background-color:rgb(248, 184, 95) ;
+    cursor: pointer;
+    font-size: 2rem;
+    
+}
+@media(max-width:650px) {
+    .contenido2{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .formulario .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid .buton1{
+        position: relative;
+        top: -2px;
+    }
+}
+.enlace:hover{
+    transition: 0.3s;
+}
+
+.frase2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2rem;
+    border: solid black;
+    align-items: center;
+    border-radius: 20px;
+}
+h2{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 10rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+.formulario{
+    font-size: 2.5rem;
+}
+.formulario div{
+    margin: 1rem;
+}
+.formularios{
+    height: 100%;
+    padding: 0;
+}
+.formularios legend{
+    text-align: center;
+}
+.buton1{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: 60px;
+}
+.botons{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.boton img{
+    background-color: #000;
+    border-radius: 50%;
+    font-size: large;
+    width: 3rem;
+    height: 3rem;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.main2.dark{
+    background: #24292d;
+}
+.frase{
+ background-color:rgba(250, 235, 215, 0.538) ;
+}
+.contenido2 .frase2{
+    background-color:rgba(250, 235, 215, 0.538) ;
+}
+.formulario{
+    background-color:rgba(250, 235, 215, 0.538) ;
+}@media(max-width:768px){
+    .buton1{
+        position: relative;
+        top: 1px;
+    }
+}
+.error{
+    background-color: red;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: var(--blanco);
+
+}
+.correcto{
+    background-color: green;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: var(--blanco);
+
+}
