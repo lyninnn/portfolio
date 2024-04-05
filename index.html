@@ -10,28 +10,55 @@
 </head>
 
 <body class="main2">
-  
+
     <header class="logoconte">
 
         <div class="logo">
             <a href="./index.html">
-                
                 <div class="logo1"></div>
             </a>
-
             <nav>
                 <div class="enlace">
                     <div class="enlaces">
                         <a href="index.html">Inicio</a>
                     </div>
                     <div class="enlaces">
-                        <a href="#">Proyecto</a>
+                        <a href="proyecto.html">Proyecto</a>
                     </div>
                     <div class="enlaces">
                         <a href="#">Sub Menu 3</a>
                     </div>
                 </div>
             </nav>
+
+
+            <div id="icono-h" class="menu-icon"></div>
+            <div id="menu-ham" class="menu-ham">
+                <ul id="nave-list-mv">
+                   
+                        <a href="index.html">
+                            <div >
+                                <p>Inicio</p>
+                            </div>
+                        </a>
+                   
+                    
+                        <a href="proyecto.html">
+                            <div>
+                                <p>Proyectos</p>
+                            </div>
+                        </a>
+                   
+                  
+                        <a href="./formulario.html">
+                            <div>
+                                <p>Sub menu</p>
+                            </div>
+                        </a>
+                    
+                </ul>
+            </div>
+        </div>
         </div>
 
     </header>
@@ -45,7 +72,7 @@
                 </div>
                 <div class="imagen">
                     <!-- <img src="/img/foto.jpg" alt="imagen"> -->
-                    <img  src="./img/images.jpeg" alt="imagen">
+                    <img src="./img/images.jpeg" alt="imagen">
                 </div>
                 <div class="contenido3">
                     <h2>Linyi:<br>
@@ -103,55 +130,38 @@
                     <legend>
                         Contactame
                     </legend>
-                <div class="grid">
-                    <label class="campo__label" for="nombre">Nombre</label>
-                    <input 
-                        class="campo__field"
-                        type="text" 
-                        placeholder="Tu Nombre" 
-                        id="nombre"
-                    >
-                </div>
-                <div class="grid">
-                    <label class="campo__label" for="nombre">Telefono</label>
-                    <input 
-                        class="campo__field"
-                        type="text" 
-                        placeholder="Tu Nombre" 
-                        id="telefono"
-                    >
-                </div>
-                <div class="grid">
-                    <label class="campo__label" for="email">E-mail</label>
-                    <input 
-                        class="campo__field"
-                        type="email" 
-                        placeholder="Tu E-mail" 
-                        id="email"
-                    >
-                </div>
-                <div class="grid">
-                    <label class="campo__label" for="mensaje">Mensaje</label>
-                    <textarea 
-                        class="campo__field campo__field--textarea"
-                        id="mensaje"
-                    ></textarea>
-                </div>
-            
-                <div class="buton1">
-                    <input type="submit" value="Enviar" class="boton boton--primario">
-                </div>
+                    <div class="grid">
+                        <label class="campo__label" for="nombre">Nombre</label>
+                        <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+                    </div>
+                    <div class="grid">
+                        <label class="campo__label" for="nombre">Telefono</label>
+                        <input class="campo__field" type="text" placeholder="Tu Nombre" id="telefono">
+                    </div>
+                    <div class="grid">
+                        <label class="campo__label" for="email">E-mail</label>
+                        <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+                    </div>
+                    <div class="grid">
+                        <label class="campo__label" for="mensaje">Mensaje</label>
+                        <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+                    </div>
+
+                    <div class="buton1">
+                        <input type="submit" value="Enviar" class="boton boton--primario">
+                    </div>
             </form>
             </fieldset>
 
-           
+
 
 
         </section>
 
     </main>
-
+    
     <script src="./javascrip/java.js"></script>
+    <script src="./javascrip/menuHamburguesa.js"></script>
 </body>
 <footer>
     <p class="footer__texto">
@@ -160,7 +170,3 @@
 </footer>
 
 </html>
-
-
-
-

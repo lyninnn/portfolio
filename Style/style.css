@@ -68,6 +68,9 @@ h1{
     text-align: center;
     font-size: 3rem;
 }
+.menu-icon{
+    background-image: url("../img/hamburguesa_main.jpg");
+  }
 header nav{
     font-size: 2rem;
     width: 100%;
@@ -78,8 +81,8 @@ header nav{
 }
 .logo1{
     background-image: url("../img/logo.png");
-    min-width: 50rem;
-    min-height: 20rem;
+    width: 50rem;
+    height: 20rem;
     background-position: center;
 }
 header nav{
@@ -101,6 +104,10 @@ nav a{
     background-color:rgb(248, 184, 95);
     padding: 1rem;
     cursor: pointer;
+}
+.enlaces a{
+    text-align: center;
+    width: 100%;
 }
 .enlaces:hover{
     width: 100%;
@@ -143,13 +150,11 @@ img{
     color:white
 }
 
-@media(min-width:768px) {
-    .logo1{
-        min-width: 50rem;
-    }
+@media(min-width:1008px) {
     .contenido{
         flex-direction: row;
     }
+    
     h2{
         font-size: 2rem;
     }
@@ -187,8 +192,21 @@ img{
     .grid{
         line-height: 3rem;
     }
+   
 
 }
+/* .menu-ham{
+    display: none;
+  } */
+  .menu-ham{
+    /* display: flex; */
+    /* display: block; */
+    flex-direction: column;
+    width: 100%;
+    height: 4rem;
+    
+    /* border: solid red 2px; */
+  }  
 .formulario .grid {
     display: flex;
     flex-direction: column;
@@ -214,8 +232,28 @@ img{
     font-size: 2rem;
     
 }
-@media(max-width:650px) {
-   
+
+@media(max-width:760px) {
+    
+      .enlaces{
+        display: none;
+      }
+  
+    .logo1{
+        width: 50rem;
+        background-size: cover;
+         min-height: 20rem;
+     }
+    .logo{
+        align-items:flex-start ;
+    }
+    .menu-icon{
+        background-size: cover;
+        height: 8rem;
+        width: 8rem;
+        display: flex;
+        background-color: var(--segundario);
+    }
     .contenido2{
         grid-template-columns:repeat(2,1fr);
     }
@@ -227,10 +265,11 @@ img{
         position: relative;
         top: -2px;
     }
-    .frase2 img{
-        width: 100%;
+}
+@media(max-width:400px){
+    .contenido2{
+        grid-template-columns: repeat(1,1fr);
     }
-
 }
 .enlace:hover{
     transition: 0.3s;
@@ -256,6 +295,7 @@ footer{
     position: relative;
     top: 10rem;
 }
+
 h3{
     font-size: 1.5rem;
 }
@@ -269,6 +309,7 @@ h3{
     height: 100%;
     padding: 0;
 }
+
 .formularios legend{
     text-align: center;
 }
@@ -304,12 +345,30 @@ h3{
 }
 .formulario{
     background-color:rgba(250, 235, 215, 0.538) ;
-}@media(max-width:768px){
-    .buton1{
-        position: relative;
-        top: 1px;
+}
+@media(max-width:738px){
+     #nave-list-mv{
+    display: block;   
+    z-index: 1;
+    background-color:#ffce00;    
+    width: 100%;
+    position: relative;
+    top: 65px;
+    text-decoration: none;
+    display: none; 
+    }
+    #nave-list-mv div p,a{
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color:black;
+        width: 100%;
+    }
+    #nave-list-mv div p:hover{
+    color: #535353;
     }
 }
+
 .error{
     background-color: red;
     padding: 1rem 0.5rem;
@@ -323,4 +382,18 @@ h3{
     text-align: center;
     color: var(--blanco);
 
+}
+
+
+@media(min-width:768px){
+    .buton1{
+        position: relative;
+        top: 1px;
+    }
+    #nave-list-mv{
+        display: none;
+    }
+   
+
+    
 }
