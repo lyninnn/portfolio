@@ -9,7 +9,7 @@
                 "HTML",
                 "CSS"
             ],
-            "imagen":"../img/proyecto2.png"
+            "imagen":"./img/proyecto2.png"
         },
         {
             "nombre":"MovilProject",
@@ -19,7 +19,7 @@
                 "HTML",
                 "CSS"
             ],
-            "imagen":"../img/proyecto1.png"
+            "imagen":"./img/proyecto1.png"
         },
         {
             "nombre":"Card",
@@ -29,7 +29,7 @@
                 "HTML",
                 "CSS"
             ],
-            "imagen":"../img/proyecto3.png"
+            "imagen":"./img/proyecto3.png"
         },
         {
             "nombre":"Posicion",
@@ -39,7 +39,7 @@
                 "HTML",
                 "CSS"
             ],
-            "imagen":"../img/proyecto4.png"
+            "imagen":"./img/proyecto4.png"
         },
         {
             "nombre":"Gato",
@@ -50,7 +50,7 @@
                 "CSS",
                 "JavaScript"
             ],
-            "imagen":"../img/proyecto6.png"
+            "imagen":"./img/proyecto6.png"
         },
         {
             "nombre":"Portfolio",
@@ -61,7 +61,7 @@
                 "CSS",
                 "JavaScript"
             ],
-            "imagen":"../img/proyecto5.png"
+            "imagen":"./img/proyecto5.png"
         }
     ]
     
